@@ -4,15 +4,15 @@ import { ApolloLink } from 'apollo-link'
 import { createHttpLink } from 'apollo-link-http'
 import { withClientState } from 'apollo-link-state'
 
-import { defaults, resolvers, typeDefs } from './resolvers'
+import { defaults, typeDefs } from './resolvers'
 
 const cache = new InMemoryCache()
 
 const stateLink = withClientState({
   cache,
-  resolvers,
   defaults,
   typeDefs,
+  resolvers: {},
 })
 
 const uri = 'https://us1.prisma.sh/public-luckox-377/reservation-graphql-backend/dev'

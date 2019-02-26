@@ -1,5 +1,11 @@
 import gql from 'graphql-tag'
 
+export const GET_DATE = gql`
+  query getDate {
+    arrivalDate @client
+  }
+`
+
 export const reservationsQuery = gql`
   query reservations($arrivalDate: String!) {
     reservations(where: { arrivalDate: $arrivalDate }) {
