@@ -6,6 +6,6 @@ export default class ReservationListScreen extends React.PureComponent<{}> {
   public static navigationOptions = (): { header: null } => ({ header: null })
 
   public render() {
-    return <ReservationDate />
+    return <ReservationDate data={null} />
   }
 }
