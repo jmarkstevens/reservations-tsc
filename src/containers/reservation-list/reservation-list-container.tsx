@@ -6,7 +6,7 @@ import { reservationsQuery } from '../../graphql/queries'
 import { ResevationListProps } from '../../types'
 
 const withQuery = graphql<ResevationListProps>(reservationsQuery, {
-  options: props => ({ variables: { arrivalDate: props.arrivalDate } }),
+  options: props => ({ variables: { arrivalDate: props.arrivalDate, arrivalDate2: props.arrivalDate2 } }),
 })
 
 export default withQuery(props => (

@@ -7,8 +7,8 @@ export const GET_DATE = gql`
 `
 
 export const reservationsQuery = gql`
-  query reservations($arrivalDate: String!) {
-    reservations(where: { arrivalDate: $arrivalDate }) {
+  query reservations($arrivalDate: String!, $arrivalDate2: String!) {
+    reservations(where: { OR: [{ arrivalDate: $arrivalDate }, { arrivalDate: $arrivalDate2 }] }) {
       id
       name
       hotelName

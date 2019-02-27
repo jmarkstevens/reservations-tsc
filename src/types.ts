@@ -28,5 +28,6 @@ export interface ReservationResponse {
 
 export interface ResevationListProps {
   arrivalDate: string,
+  arrivalDate2: string,
   data: ({ refetch: () => void, reservations: ReservationResponse[] }) | any,
 }
