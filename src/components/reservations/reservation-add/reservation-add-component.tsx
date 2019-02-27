@@ -110,7 +110,7 @@ class ReservationAddComponent extends React.PureComponent<Props & NavigationScre
             date={arrivalDate}
             mode="date"
             placeholder="arrival date"
-            format="M/DD/YYYY"
+            format="M/D/YYYY"
             confirmBtnText="Confirm"
             cancelBtnText="Cancel"
             customStyles={{
@@ -136,7 +136,7 @@ class ReservationAddComponent extends React.PureComponent<Props & NavigationScre
             date={departureDate}
             mode="date"
             placeholder="departure date"
-            format="M/DD/YYYY"
+            format="M/D/YYYY"
             confirmBtnText="Confirm"
             cancelBtnText="Cancel"
             customStyles={{
